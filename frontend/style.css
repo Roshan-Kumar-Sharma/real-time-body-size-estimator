@@ -1,0 +1,73 @@
+
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  color: #3D3D3D;
+}
+
+h1 {
+  font-style: italic;
+  color: #FF6F00;
+}
+
+video {
+  display: block;
+  /* transform: rotateY(180deg);
+  -moz-transform:rotateY(180deg); */
+}
+
+section {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.removed {
+  display: none;
+}
+
+/* .invisible {
+  opacity: 0.2;
+} */
+
+.camView {
+  position: relative;
+  float: left;
+  width: calc(100% - 20px);
+  margin: 10px;
+  cursor: pointer;
+}
+
+canvas{
+  /* display: none; */
+  width: 250px;
+  height: 350px;
+  /* border: 1px solid red; */
+}
+
+.camView canvas {
+  position: absolute;
+  z-index: 2;
+  top: 65px;
+  left: calc(50% - 125px);
+}
+
+/* img{
+  display: none;
+  width: 200px;
+  height: 300px;
+}
+
+.camView img {
+  position: absolute;
+  z-index: 2;
+  top: 90px;
+  left: calc(50% - 100px);
+} */
+
+img{
+  display: none;
+  width: 250px;
+  height: 350px;
+}
