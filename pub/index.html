@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>CLOTHING ONLINE STORE</title>
+        <link rel="stylesheet" href="css/home.css" />
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="nav">
+                <img src="img/comp.png" class="comp" alt="comp" />
+
+                <div class="nav-items">
+                    <div class="search">
+                        <input
+                            type="text"
+                            class="searchbox"
+                            placeholder="search"
+                        />
+                        <button class="searchbutton" name="button">
+                            search
+                        </button>
+                    </div>
+
+                    <img src="img/user.png" class="user" alt="" />
+                    <img src="img/cart.png" class="cart" alt="" />
+                </div>
+            </div>
+        </nav>
+
+        <!--- hero-section --->
+
+        <header class="herosection">
+            <div class="content">
+                <p class="subheading">Best fashion collection</p>
+            </div>
+        </header>
+
+        <!--- cards-container --->
+        <section class="product">
+            <h2 class="product-category">BEST SELLING</h2>
+
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/dress.png" class="dress" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                        <h2 class="product-det">Dress</h2>
+                        <span class="price">$208</span>
+                    </div>
+
+                    <button class="but">S</button>
+                    <button class="but">M</button>
+                    <button class="but">L</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/shirt.png" class="dress" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                        <h2 class="product-det">Sweatshirt</h2>
+                        <span class="price">$201</span>
+                    </div>
+
+                    <button class="but">S</button>
+                    <button class="but">M</button>
+                    <button class="but">L</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/black shirt.png" class="dress" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                        <h2 class="product-det">Black Shirt</h2>
+                        <span class="price">$200</span>
+                    </div>
+
+                    <button class="but">S</button>
+                    <button class="but">M</button>
+                    <button class="but">L</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/Pink dress.png" class="dress" alt="" />
+                    </div>
+
+                    <div class="product-info">
+                        <h2 class="product-det">Pink Dress</h2>
+                        <span class="price">$2089</span>
+                    </div>
+
+                    <button class="but">S</button>
+                    <button class="but">M</button>
+                    <button class="but">L</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="webcam-section">
+            <section id="demos" class="invisible child">
+                <div id="liveView" class="camView">
+                    <div id="getHeight">
+                        <h1>Clothing size estimator using Tensorflow js</h1>
+                        <div>
+                          Enter your height accurately in the input box below (in centimeters). You can use Google to convert to CM if you are unsure. The more accurate you are the better the results.
+                        </div>
+                        <form onsubmit="enableCam(event)">
+                          <input type="text" placeholder="Your height (in centimeters)" required><br>
+                          <input class="btn" type="submit" value="Scan yourself">
+                        </form>
+                    </div>
+
+                    <div id="frontSide">
+                      <h1>Great! Now go stand a few feet away from your webcam so your whole body is in shot like the image below.</h1>
+                      <p>Note your hands should be by your sides and legs slightly apart. Stand straight and tall. No slouching!</p>
+                      <img src="img/body_outline2.jpg" alt="">
+                    </div>
+
+                    <div id="sidewise">
+                      <h1>Awesome! Now turn sideways like this for final measurements</h1>
+                      <p>Stand straight but you may turn your head to view the screen to see when you are done</p>
+                      <img src="img/body_outline2.jpg" alt="">
+                    </div>
+
+                    <div id="captureImage">
+                        <!-- <video
+                            src="img/sample-mp4-file-small.mp4"
+                            id="webcam"
+                            muted
+                            width="20rem"
+                            height="480"
+                            autoplay
+                        ></video> -->
+                        <video
+                            id="webcam"
+                            muted
+                            width="100%"
+                            height="480"
+                            autoplay
+                        ></video>
+
+                        <canvas id="canvas"></canvas>
+                        <img id="image" src="img/body_outline2.jpg" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <section id="right-side" class="child">
+                <h1>Tensorflow T-Shirt</h1>
+                <button id="webcamButton" class="btn">Find Your Size</button>
+            </section>
+        </div>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+@import "nav.css";
+
+
+.herosection {width:100%;
+  height: calc(100vh - 120px);
+
+background-image: url("../img/header.jpg");
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.subheading{margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+color: white;
+font-family: cursive;
+text-decoration: none;}
+.product-category{padding: 0 10vw;
+font-size: 30px;
+color: black;
+font-family:verdana;
+margin-bottom: 40PX;}
+
+/*product*/
+
+.product{position: relative;
+padding: 20px 0;
+overflow: hidden;}
+
+.product-category{padding: 0 10vw;
+font-size: 30px;
+font-weight: 500;
+margin-bottom: 40px;
+text-transform: capitalize;}
+
+.product-container{padding:0 10vw;
+display:flex;
+overflow-x: auto;
+scroll-behavior: smooth;}
+.product-container::-webkit-scrollbar{display: none}
+
+.product-card{ flex:0 0 auto;
+  width: 250px;
+height: 450px;
+margin-right: 40px;}
+
+
+
+.product-image{position: relative;
+
+overflow: hidden;}
+
+.product-info{width: 100%
+  height:100px;
+
+
+
+
+}
+.product-detail{text-transform: uppercase;
+}
+.price{font-weight: 900px;
+font-size: 20px;
+}
+.but{background-color: white;
+  color: black;
+  transition-duration: 0.4s;
+  display: inline-block;
+    font-size: 16px;
+  margin-top: 10px;
+border-radius: 4px;
+border-color: black;
+font-size: 20px;
+width: 30px;}
+
+
+.but:hover{background-color: #555555;
+  color: white;}
+.product-details{width:500px;
+  height: 500px;}
+
+  .details{width:50%;}
+
+  .details.product-brand{text-transform: capitalize;
+  font-size: 30px;}
+
+.product-short{font-size: 15px;
+
+height: auto;
+margin-top: 20px;
+color: grey;}
+.product-subheading{margin-top: 30px;
+
+text-transform: capitalize;
+font-family:fantasy; }
+
+.size-radio-btn{display: inline-block;
+width: 15%;
+height: 5%;
+text-align: center;
+font-size: 20px;
+border: 1px solid #383838;
+border-radius: 50%;
+margin: 10px;
+margin-left: 0;
+line-height: 80px;
+text-transform:capitalize;
+color: #383838;
+cursor: pointer;
+border-color: black;}
+.size-radio-btn:hover{background-color: #555555;
+  color: white;}
+
+  .button{width: 200px;
+  height:70px;
+  display: inline-block;
+font-size: 20px;
+  border: 1px solid #383838;
+  border-radius: 10px;;
+  margin: 10px;
+  margin-left: 0;
+  line-height: 80px;
+  text-transform:capitalize;
+  color: #383838;
+  cursor: pointer;
+  border-color: black;
+background-color: orange}
+.button:hover{background-color: #555555;
+  color: white;}
+  .hide{
+    display:none;
+    border-color: black;
+    border-style: solid;
+
+
+  }
+  .show{
+    display:block;
+    height: 30px;
+    width: 150px;
+  }

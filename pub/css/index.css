@@ -1,0 +1,131 @@
+#webcam-section{
+    display: flex;
+    padding: 2rem;
+
+}
+
+#demos{
+    width: 75%;
+    /* display: none; */
+    background-color: #2c2b2b;
+    /* opacity: 0.1; */
+}
+
+#right-side{
+    width: 25%;
+}
+
+.child{
+    /* margin: 1rem; */
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  color: #0a0a0a;
+}
+
+h1 {
+  font-style: italic;
+  color: #FF6F00;
+}
+
+video {
+    width: 100%;
+    display: block;
+  /* transform: rotateY(180deg);
+  -moz-transform:rotateY(180deg); */
+}
+
+#webcamButton{
+    margin-top: 1rem;
+}
+
+/* section {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+} */
+
+.removed {
+  display: none;
+}
+
+/* .invisible {
+  opacity: 0.2;
+} */
+
+.camView {
+  position: relative;
+  float: left;
+  width: calc(100% - 20px);
+  margin: 10px;
+  cursor: pointer;
+}
+
+canvas{
+  /* display: none; */
+  width: 250px;
+  height: 350px;
+  /* border: 1px solid red; */
+}
+
+.camView canvas {
+  position: absolute;
+  z-index: 2;
+  top: 65px;
+  left: calc(50% - 125px);
+}
+
+/* img{
+  display: none;
+  width: 200px;
+  height: 300px;
+}
+
+.camView img {
+  position: absolute;
+  z-index: 2;
+  top: 90px;
+  left: calc(50% - 100px);
+} */
+
+#image{
+  display: none;
+  width: 250px;
+  height: 350px;
+}
+
+#sidewise, #frontSide, #getHeight, form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidewise > *, #frontSide > *, #getHeight > * , input{
+    margin-bottom: 1rem;
+}
+
+#getHeight > div, #frontSide > p, #sidewise > p{
+    text-align: center;
+    color: white;
+}
+
+input{
+    padding: 0.5rem;
+    font-size: large;
+}
+
+.btn{
+    cursor: pointer;
+    border: solid black;
+    padding: 0.5rem;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
