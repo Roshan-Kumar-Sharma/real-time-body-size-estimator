@@ -1,0 +1,65 @@
+/* img{
+    position: relative;
+    z-index: 2;
+} */
+
+/* img{
+    width: 200px;
+    height: 300px;
+} */
+
+#heading{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#form, #data{
+    margin: 3rem;
+}
+
+span{
+    color: blue;
+}
+
+label{
+    font-weight: bolder;
+}
+
+label, input{
+    font-size: large;
+}
+
+form > div{
+    margin-bottom: 1rem;
+}
+
+#height-error{
+    margin-top: 0.3rem;
+    position: relative;
+    left: 14.3rem;
+}
+
+.invalid{
+    color: red;
+}
+
+/* canvas{
+    width: 200px;
+    height: 300px;
+    overflow: auto;
+} */
+
+#imageContainer, #canvasContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem 10rem 3rem;
+    margin: 0 1rem 10rem 3rem;
+
+}
+
+#imageContainer > img, #canvasContainer > canvas{
+    border: 3px solid gray;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
