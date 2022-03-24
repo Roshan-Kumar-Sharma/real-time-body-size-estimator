@@ -29,8 +29,8 @@ image.addEventListener('blur', (e) => {
     const frontImg = e.target.value + "_front.jpg"
     const sideImg = e.target.value + "_side.jpg"
 
-    img1.src = `images/personal_img/${frontImg}`
-    img2.src = `images/personal_img/${sideImg}`;
+    img1.src = `images/${frontImg}`
+    img2.src = `images/${sideImg}`;
 
     img1.onerror = () => {
         imageContainer.style.display = "none";
@@ -139,9 +139,10 @@ async function loadAndPredict() {
     // };
 
     const bodyPixProperties = {
-        architecture: "ResNet50",
-        outputStride: 32,
-        quantBytes: 1,
+        architecture: "MobileNetV1",
+        outputStride: 16,
+        quantBytes: 4,
+        multiplier: 1
     };
 
     const model = await bodyPix.load(bodyPixProperties);

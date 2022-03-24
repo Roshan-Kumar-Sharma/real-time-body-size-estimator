@@ -108,7 +108,9 @@ function enableCam(event) {
 function startVideo(){
     // getUsermedia parameters to force video but not audio.
     const constraints = {
-        video: true,
+        video: false,
+        audio: true
+        
     };
 
     // Activate the webcam stream.
@@ -118,9 +120,12 @@ function startVideo(){
         // video.addEventListener("loadeddata", predictWebcam);
 
         buildCanvas();
-
+    
         document.getElementsByTagName("canvas")[0].style.display = "block";
     });
+
+    // buildCanvas();
+    // document.getElementsByTagName("canvas")[0].style.display = "block";
 }
 
 function buildCanvas() {
